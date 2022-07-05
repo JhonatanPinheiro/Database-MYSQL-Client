@@ -3164,3 +3164,28 @@ INNER JOIN CURSOS P
 ON P.IDCURSO = C.ID_PREREQ;
 
 
+
+
+SELECT 
+C.NOME AS CURSO,
+C.VALOR AS VALOR,
+C.HORAS AS CARGA,
+IFNULL(P.NOME, '-----') AS 'PRE-REQUISITOS'
+FROM CURSOS C 
+LEFT JOIN CURSOS P 
+ON P.IDCURSO = C.ID_PREREQ;
+
+
+--------------------------------------87. Introdução aos cursores---------------------
+
+/*
+-- O QUE É UM VETOR ? 
+	-- É UM CONJUNTO DE ELEMENTOS DO MESMO TIPO
+
+-- O QUE É UM CURSOS?
+	-- NADA MAIS É QUE UM VETOR 
+
+-- Lembrando que usar cursores joga o desempenho do banco lá em baixo, pois utiliza memoria RAM, então use se for necessário !
+
+ */
+
