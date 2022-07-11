@@ -3453,10 +3453,12 @@ SHOW DATABASES;
 USE INFORMATION_SCHEMA;
 -- Estou verificando todos as tabelas existentes no nessa banco de dados 
 SHOW TABLES;
--- Estou monstrando todos os dados dessa tabela  Innodb_sys_foreign
-SELECT * FROM INNODB_SYS_FOREIGN;
--- Estou trazendo os registros conforme o filtro que eu fiz  ou seja usando where + like 
-SELECT * FROM INNODB_SYS_FOREIGN WHERE ID LIKE '%CONSULTORIO%';
+-- Estou monstrando todos os dados dessa tabela  TABLE_CONSTRAINTS
+SELECT * FROM TABLE_CONSTRAINTS;
+-- Estou trazendo os registros conforme o filtro que eu fiz  ou seja usando where
+SELECT * FROM TABLE_CONSTRAINTS WHERE TABLE_NAME = 'CONSULTA';
+
+
 
 
 
