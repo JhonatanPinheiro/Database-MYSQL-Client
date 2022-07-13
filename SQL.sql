@@ -3468,5 +3468,4 @@ SHOW TABLES;
 -- Estou monstrando todos os dados dessa tabela  TABLE_CONSTRAINTS
 SELECT * FROM TABLE_CONSTRAINTS;
 -- Estou trazendo os registros conforme o filtro que eu fiz  ou seja usando where
-SELECT * FROM TABLE_CONSTRAINTS WHERE TABLE_NAME = 'CONSULTA';
-
+SELECT * FROM TABLE_CONSTRAINTS WHERE TABLE_NAME = 'CONSULTA'
