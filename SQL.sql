@@ -3469,3 +3469,8 @@ SHOW TABLES;
 SELECT * FROM TABLE_CONSTRAINTS;
 -- Estou trazendo os registros conforme o filtro que eu fiz  ou seja usando where
 SELECT * FROM TABLE_CONSTRAINTS WHERE TABLE_NAME = 'CONSULTA'
+
+
+
+-- Comando para informa onde fica o diretório do Banco de dados (Caminho)
+SHOW VARIABLES LIKE 'datadir';
